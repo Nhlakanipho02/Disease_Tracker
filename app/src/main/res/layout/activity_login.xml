@@ -6,7 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/network"
     tools:context=".MainLogin">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/mask1"
+        />
 
 
     <EditText
@@ -14,22 +23,64 @@
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="160dp"
-        android:hint="username"/>
+        android:drawableLeft="@drawable/ic_person"
+        android:hint="@string/username"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
 
         android:id="@+id/password"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="password" />
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
-       android:text="LOGIN"/>
+        android:text="@string/login"
+        android:id="@+id/LOGIN"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="Don't have an account?"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Register"
+            android:textColor="#00BCD4"
+            android:textColorLink="#00BCD4"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="10dp"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>

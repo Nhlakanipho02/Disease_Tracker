@@ -1,11 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light"
+    android:gravity="center"
     tools:context=".Register">
 
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Name"
+            android:paddingRight="50dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_marginRight="20dp"/>
+
+
+        <EditText
+
+            android:id="@+id/Surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Surname"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="50dp"
+            android:drawableLeft="@drawable/ic_person"/>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/E-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:hint="username"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/ic_person"
+        android:textColorHint="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <EditText
+
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_lock"
+            android:textColorHint="#FFFFFF"
+            android:paddingRight="50dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+
+            android:id="@+id/confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:hint="confirm_password"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_lock"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:paddingLeft="50dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Create Account"
+        android:id="@+id/Create_Account"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="Already have an account?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Login"
+            android:textColor="#00BCD4"
+            android:textColorLink="#00BCD4"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
